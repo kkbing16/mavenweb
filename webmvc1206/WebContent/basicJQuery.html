@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery First</title>
+</head>
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+User Name: <input type="text" id="username" value="John"/><br/>
+<button onclick="first()">JavaScript</button>
+<button onclick="second()">jQuery JavaScript</button>
+<script>
+   function first(){
+	   var txt=document.getElementById("username").value;
+	   alert(txt);
+   }
+   function second(){
+	   var txt2=$("#username").val();
+	   alert(txt2);
+   }
+</script>
+</body>
+</html>

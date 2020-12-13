@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pure jQuery</title>
+</head>
+<body>
+ <script src="js/jquery3.5.1.min.js"></script>
+<button id="b1">start A</button>
+<button id="b2">start B</button>
+ <script>   
+    $(document).ready(function(){
+    	$("button").click(function(){
+    		alert($("#user").val());
+    	});
+    });
+ </script>
+ User :<input type="text" id="user" value="EmployeeA"/>
+</body>
+</html>

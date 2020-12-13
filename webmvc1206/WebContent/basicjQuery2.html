@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery First</title>
+</head>
+<body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+<a href="#" onclick="toggleDIV()">JS Click Me</a>
+<a href="#" onclick="toggleDIV2()">JQuery Click Me</a>
+<div id="div1" style="visibility:visible">Toggle div</div>
+<script>
+    function toggleDIV(){
+    	var div1=document.getElementById("div1");
+    	if(div1.style.visibility=="hidden")
+    		div1.style.visibility="visible";
+    	else
+    		div1.style.visibility="hidden";
+    }
+    function toggleDIV2(){
+       $("#div1").slideToggle();
+    }
+</script>
+</body>
+</html>

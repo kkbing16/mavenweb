@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Table</title>
+<style type="text/css">
+  .oddColor {background-color: lightblue} 
+  .evenColor {background-color: yellow}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+   function start(){
+	   $("tr:odd").addClass("oddColor");
+	   $("tr:even").addClass("evenColor");
+   }
+   $(document).ready(start);
+</script>
+</head>
+<body>
+<table border="1" width="60%">
+ <tr>
+   <td>A</td><td>B</td><td>C</td>
+ </tr>
+  <tr>
+   <td>D</td><td>E</td><td>F</td>
+ </tr>
+  <tr>
+   <td>M</td><td>N</td><td>P</td>
+ </tr>
+  <tr>
+   <td>U</td><td>V</td><td>W</td>
+ </tr>
+  <tr>
+   <td>X</td><td>Y</td><td>Z</td>
+ </tr>
+</table>
+</body>
+</html>

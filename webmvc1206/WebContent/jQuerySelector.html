@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<style type="text/css">
+    .box {background-color : yellow }
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<div class="box">Hello div 1 </div>
+<div id="box">Hello div 2</div>
+<button> change </button>
+<script>
+  function change(){
+	  $("#box").addClass("box");
+  }
+  function start(){
+	$("button").click(change);
+  }
+  $(document).ready(start);
+</script>
+</body>
+</html>
