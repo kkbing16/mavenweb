@@ -27,7 +27,10 @@ public class PictureServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String cnt=request.getParameter("id");
+		String[]  images= {"images/cups.jpg","images/earphone.jpg","images/ipad.jpg","images/lenovo.jpg","images/shoes.jpg"};
+		int count=Integer.parseInt(cnt)%images.length;        		
+		response.getWriter().append(images[count]);
 	}
 
 	/**
